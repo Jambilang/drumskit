@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Drum Kit</h1>
+    <p>Click a drum or press its key.</p>
+
+    <div class="kit">
+      <button class="pad crash" data-key="a"><b>A</b>Crash</button>
+      <button class="pad tom1" data-key="f"><b>F</b>Tom 1</button>
+      <button class="pad tom2" data-key="g"><b>G</b>Tom 2</button>
+      <button class="pad hat" data-key="s"><b>S</b>Hi-hat</button>
+      <button class="pad snare" data-key="d"><b>D</b>Snare</button>
+      <button class="pad kick" data-key=" "><b>Space</b>Kick</button>
+      <button class="pad floor" data-key="j"><b>J</b>Floor tom</button>
+    </div>
+
+    <div class="controls">
+      <button id="beat">Play beat</button>
+      <button id="stop">Stop</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

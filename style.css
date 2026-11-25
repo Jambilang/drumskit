@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222222;
+  margin: 0;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0 0 20px;
+  color: #555555;
+}
+
+/* The drum area */
+.kit {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  margin-bottom: 20px;
+}
+
+/* Each drum is a circle button */
+.pad {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #222222;
+  border-radius: 50%;
+  background: #f2f2f2;
+  color: #222222;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.pad b {
+  font-size: 18px;
+}
+
+.pad:hover {
+  background: #e4e4e4;
+}
+
+/* Added by script.js when a drum is hit */
+.pad.hit {
+  background: #cccccc;
+  transform: scale(0.95);
+}
+
+/* Size and position of each drum */
+.crash { left: 2%;  top: 4%;  width: 96px;  height: 96px; }
+.tom1  { left: 28%; top: 8%;  width: 84px;  height: 84px; }
+.tom2  { left: 52%; top: 8%;  width: 84px;  height: 84px; }
+.hat   { right: 2%; top: 4%;  width: 90px;  height: 90px; }
+.snare { left: 6%;  top: 50%; width: 104px; height: 104px; }
+.kick  { left: 37%; top: 52%; width: 120px; height: 120px; }
+.floor { right: 4%; top: 50%; width: 104px; height: 104px; }
+
+.controls button {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 8px 16px;
+  border: 2px solid #222222;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #222222;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #eeeeee;
+}
